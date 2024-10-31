@@ -1,8 +1,8 @@
-const removeFromArray = function (array, ...deletionNum) {    
-    for(let number of deletionNum) {
+const removeFromArray = function (array, ...deletionVal) {    
+    for(let value of deletionVal) {
         let checkIndex = 0;
         while (checkIndex < array.length) {
-            if (array[checkIndex] === number) {
+            if (array[checkIndex] === value) {
                 array.splice(checkIndex, 1); // 2nd parameter means remove one item only
             }
             else {
