@@ -24,14 +24,14 @@ const multiply = function (numbers) {
 
 const power = function (num, pow) {
   let result = 1;
-  for(let times = 1; times <= pow; times++){
+  for (let times = 1; times <= pow; times++) {
     result *= num;
   }
   return result;
 };
 
-const factorial = function () {
-
+const factorial = function (num) {
+  return (num >= 2) ? num * factorial(num - 1) : 1;
 };
 
 // Do not edit below this line
